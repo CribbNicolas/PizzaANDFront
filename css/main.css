@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo > p {
+    display: flex;
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+.logo > p > span:nth-of-type(1){
+ color: #39B24A;
+}
+.logo > p > span:nth-of-type(2){
+    color: #fc200c;
+}
+
+/* /// HEADER /// */
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: #222222;
+    color: #FFFFFF;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.28);
+}
+
+nav > ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+footer > nav > ul {
+    flex-direction: column;
+}
+/* Esta seccion tabulada es solo para que tenga los iconos de pizza, esta probando cositas nomas xd */
+
+    header > nav > ul > li::before {
+        content: url("../img/pizza.svg");
+        display: inline-block;
+        scale: 0.5;
+    }
+
+    header > nav > ul > li{
+        display: flex;
+        list-style: none;
+        align-items: center;
+    } 
+
+/* /// MAIN /// */
+
+main {
+    background-color: #E5E5E5;
+    flex-grow: 1;
+}
+
+main > section {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+    padding: 40px 20px;
+}
+
+main > section > article {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.082);
+}
+
+main > section > article:nth-of-type(1) {
+    background-image: url("../img/delivery.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+main .podio-pizzas{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 60px;
+    background-color: #FFFFFF;
+}
+
+main .podio-pizzas div {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+}
+
+main .podio-pizzas > div > img {
+    max-height: 200px;
+}
+
+.delivery h2 {
+    margin-right: 15%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fc200c;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 > span { 
+    color:#FFFFFF;
+}
+
+ol > h3 {
+    font-size: 23px;
+}
+
+ol > li {
+    padding: 7px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* /// FOOTER /// */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 15px;
+    background-color: #222222;
+    color: #FFFFFF;
+}
+
